@@ -1,0 +1,345 @@
+@CHARSET "utf-8";
+
+body {
+	background-color: #C2D1E0;
+	color: #000305;
+	font-size: 87.5%; /*Base font size is 14px*/
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5%;
+	text-align: left;
+	color: #000305;
+}
+
+/*Style the links*/
+a {
+	text-decoration: none;
+	color: #CF5C3F;
+}
+
+a:link, a:visited {
+	color: #CF5C3F;
+}
+
+a:hover, a:active {
+	background-color: #CF5C3F;
+	color: white;
+}
+
+/*Style the body*/
+.body {
+	margin: 0 auto;
+	width: 70%;
+	clear: both;
+	/*makes it so that no floating elements will be on the left or the right of it*/
+}
+
+.mainheader nav {
+	background-color: #666;
+	height: 40px;
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin-bottom: 2%;
+	margin-top: 2%;
+}
+
+.mainheader nav ul {
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainheader nav ul li {
+	float: left;
+	display: inline;
+	/*Style the links*/
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+	color: #FFF;
+	display: inline-block;
+	padding: 20px 25px;
+	height: 0px;
+}
+
+.mainheader nav a:hover, .mainheader nav a:active, .mainheader nav .active a:link,
+	.mainheader nav .active a:visited {
+	background-color: #CF5C3F;
+	text-shadow: none;
+}
+
+.mainheader nav ul li a {
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.mainContent {
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	line-height: 25px;
+}
+
+.content {
+	width: 70%;
+	float: left;
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.topcontent {
+	background-color: white;
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin: 0 0 2% 0;
+}
+
+.midcontent {
+	background-color: white;
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3% 5%;
+	margin: 0 0 2% 0;
+}
+
+.topcontent header h2 {
+	color: #CF5C3F;
+}
+
+h2 {
+	color: #CF5C3F;
+}
+
+.side-top {
+	width: 21%;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	margin: 0 0 2% 3%;
+	padding: 2% 3%;
+}
+
+.side-mid {
+	width: 21%;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	/*margin top, right, bottom, left*/
+	margin: 0 0 2% 3%;
+	padding: 2% 3%;
+}
+
+.side-bottom {
+	width: 21%;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 2% 3%;
+	margin: 0 0 2% 3%;
+	overfloat: auto;
+	font-family: Arial, 'Lucida Sans Unicode';
+	line-height: 1.5%;
+	text-align: left;
+}
+
+.mainFooter {
+	width: 100%;
+	height: 80px;
+	float: left;
+	border-radius: 5px;
+	/*make borders adjust to radius in other browsers*/
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #666;
+	margin: 0 0;
+	float: left;
+}
+
+.mainFooter p {
+	color: white;
+	width: 92%;
+	margin: 5% auto;
+}
+
+.info {
+	font-style: italic;
+	color: #999;
+	font-size: 90%;
+}
+
+.mainFooter ul li {
+	display: inline-block;
+	margin: 0 auto;
+	float: right;
+}
+
+/* Making the page responsive*/
+@media only screen and (min-width: 150px) and (max-width: 600px) {
+	/*Style the body*/
+	.body {
+		width: 90%;
+		font-size: 95%;
+	}
+
+	/*Style the image*/
+	.mainHeader img {
+		width: 100%;
+	}
+	.mainheader nav {
+		height: 240px;
+	}
+	.mainheader nav ul {
+		padding-left: 0;
+	}
+	.mainheader nav ul li {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.mainheader nav a:link, .mainheader nav a:visited {
+		padding: 20px 25px;
+		height: 0px;
+		display: block;
+	}
+	.content {
+		width: 100%;
+		float: left;
+		margin-top: 2%;
+	}
+	.info {
+		display: none;
+	}
+	.topcontent {
+		background-color: white;
+		padding: 3% 5%;
+		margin-top: 2px;
+		margin-bottom: 2%;
+	}
+	.midcontent {
+		padding: 3% 5%;
+		margin-top: 3%;
+	}
+	.side-top {
+		width: 94%;
+		float: left;
+		margin: 1% 0 2% 0;
+		padding: 2% 3%;
+	}
+	.side-mid {
+		width: 94%;
+		float: left;
+		margin: 1% 0 2% 0;
+		padding: 2% 3%;
+	}
+	.side-bottom {
+		width: 94%;
+		float: left;
+		margin: 1% 0 2% 0;
+		padding: 2% 3%;
+	}
+	.mainFooter {
+		width: 100%;
+		height: 40px;
+		float: left;
+		border-radius: 5px;
+		/*make borders adjust to radius in other browsers*/
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		background-color: #666;
+		margin: 2% 0;
+	}
+}
+
+/* Making the page responsive*/
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+	/*Style the body*/
+	.body {
+		width: 90%;
+		font-size: 95%;
+	}
+
+	/*Style the image*/
+	.mainHeader img {
+		width: 100%;
+	}
+	.mainheader nav {
+		height: 240px;
+	}
+	.mainheader nav ul {
+		padding-left: 0;
+	}
+	.mainheader nav ul li {
+		width: 100%;
+		margin: 0 auto;
+	}
+	.mainheader nav a:link, .mainheader nav a:visited {
+		padding: 20px 25px;
+		height: 0px;
+		display: block;
+	}
+	.content {
+		width: 100%;
+		float: left;
+		margin-top: 2%;
+	}
+	.info {
+		display: none;
+	}
+	.topcontent {
+		background-color: white;
+		padding: 3% 5%;
+		margin-top: 2px;
+		margin-bottom: 2%;
+	}
+	.midcontent {
+		padding: 3% 5%;
+		margin-top: 3%;
+	}
+	.side-top {
+		width: 94%;
+		float: left;
+		margin: 1% 0 2% 0;
+		padding: 2% 3%;
+	}
+	.side-mid {
+		width: 94%;
+		float: left;
+		margin: 1% 0 2% 0;
+		padding: 2% 3%;
+	}
+	.side-bottom {
+		width: 94%;
+		float: left;
+		margin: 1% 0 2% 0;
+		padding: 2% 3%;
+	}
+	.mainFooter {
+		width: 100%;
+		height: 60px;
+		float: left;
+		border-radius: 5px;
+		/*make borders adjust to radius in other browsers*/
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		background-color: #666;
+		margin: 2% 0;
+	}
+}
